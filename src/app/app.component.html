@@ -1,5 +1,11 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+<div>
+  <nav class="text-center bg-success">
+    Come and Join HAP community and be an Hapian - an true human who wanted to
+    know current indian market values
+  </nav>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="" style="padding: 10px">HAP</a>
   <button
     class="navbar-toggler"
     type="button"
@@ -13,24 +19,22 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#"
-          >Home <span class="sr-only">(current)</span></a
-        >
+      <li class="nav-item">
+        <a class="nav-link" routerLink="currencies">Currency</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" routerLink="metals">Metals</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
+<div class="container" style="padding-top: 10px">
   <router-outlet></router-outlet>
 </div>
+
+<footer class="footer">
+  <div class="container">
+    <span>All Rights Reserved 2022 @HAP</span>
+  </div>
+</footer>

@@ -1,1 +1,46 @@
-<p>metalrates works!</p>
+<div class="card text-center">
+  <div class="card-header" style="background-color: hsl(26, 73%, 30%)"></div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p
+      class="card-text"
+      style="
+        font-size: 60px;
+        font-weight: 800;
+        letter-spacing: 10px;
+        color: rgb(79, 79, 120);
+      "
+    >
+      PRECIOUS METALS
+    </p>
+  </div>
+  <div
+    class="card-footer text-muted"
+    style="background-color: hsl(128, 36%, 47%)"
+  ></div>
+</div>
+<hr style="color: white" />
+
+<div *ngIf="emptymetals" class="card text-center">
+  <div class="card-body" style="font-size: 10px">
+    To load data please go to
+    <button class="btn btn-outline-success" (click)="goToHome()">HOME</button>
+    by clicking on it
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-2" style="padding: 10px" *ngFor="let metal of metals">
+    <div class="card bg-secondary text-center">
+      <div class="card-body">
+        <h5
+          class="card-title"
+          style="color: ghostwhite; text-transform: uppercase"
+        >
+          {{ metal.name }}
+        </h5>
+        <a href="#" class="btn btn-primary">{{ metal.value }} INR/g</a>
+      </div>
+    </div>
+  </div>
+</div>

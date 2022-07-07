@@ -1,1 +1,19 @@
-<p>home works!</p>
+<div class="container text-center">
+  <button
+    [ngClass]="['btn', button.class, 'bg-gradient']"
+    style="letter-spacing: 15px; font-weight: 500; font-size: larger"
+    (click)="loadData()"
+  >
+    {{ button.text }}
+  </button>
+</div>
+<hr style="background-color: black" />
+<!-- <button (click)="loadData()">{{ button.text }}</button> -->
+
+<h1
+  class="text-center"
+  style="color: hsla(0, 1%, 13%, 0.977); font-size: 400px"
+>
+  HAP
+</h1>
+<hr style="background-color: black" />
